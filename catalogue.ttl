@@ -1,0 +1,32 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.idnau.org/pid/vocabs>
+    a dcat:Catalog ;
+    dcterms:hasPart
+        <https://data.idnau.org/pid/apt> ,
+        <https://data.idnau.org/pid/atns> ,
+        <https://data.idnau.org/pid/agil> ,
+        <https://data.idnau.org/pid/capad2020> ,
+        <https://data.idnau.org/pid/ilm> ,
+        <https://data.idnau.org/pid/nntt> ,
+        <https://data.idnau.org/pid/nsw-ab> ,
+        <https://data.idnau.org/pid/asgs-is> ;
+    skos:historyNote "This catalogue was was created in 2025 from the listing of IDN spatial datasets published since 2022"@en ;
+    schema:codeRepository "https://github.com/idn-au/spatialdata-catalogue" ;
+    schema:contributor <https://kurrawong.ai> ;
+    schema:creator <https://linked.data.gov.au/org/idn> ;
+    schema:dateCreated "2022"^^xsd:gYear ;
+    schema:dateModified "2025-05-27"^^xsd:date ;
+    schema:description "The Indigenous Data Network's catalogue of spatial reference data" ;
+    schema:keywords
+        "Aboriginal" ,
+        "Australia" ,
+        "Indigenous" ,
+        "Indigenous Data Network" ;
+    schema:name "IDN Spatial Reference Data" ;
+    schema:publisher <https://linked.data.gov.au/org/idn> ;
+.
